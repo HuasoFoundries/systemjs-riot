@@ -1,47 +1,45 @@
 {
-  "name": "systemjs-riot",
-  "version": "0.4.0",
-  "description": "RiotJS loader plugin for jspm/systemjs",
-  "main": "tag",
-  "files": [
-    "tag.js"
-  ],
-  "scripts": {
-    "test": "jspm install && jspm bundle-sfx todo.tag! todo.js --format amd && node test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/amenadiel/systemjs-riot"
-  },
-  "keywords": [
-    "jspm",
-    "systemjs",
-    "riotjs",
-    "loader",
-    "plugin"
-  ],
-  "author": "Felipe Figueroa <amenadiel@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amenadiel/systemjs-riot/issues"
-  },
-  "homepage": "https://github.com/amenadiel/systemjs-riot",
-  "devDependencies": {
-    "babel-eslint": "^5.0.0-beta6",
-    "eslint-plugin-riot": "^0.1.4"
-  },
-  "jspm": {
-    "dependencies": {
-      "riot": "npm:riot@^2.3.12",
-      "riot-compiler": "npm:riot-compiler@^2.3.19"
+    "name": "systemjs-riot",
+    "version": "0.5.0",
+    "description": "RiotJS loader plugin for jspm/systemjs",
+    "main": "tag",
+    "files": [
+        "tag.js"
+    ],
+    "scripts": {
+        "test": "jspm install && jspm bundle-sfx todo.tag! todo.js --format amd && node test.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amenadiel/systemjs-riot"
+    },
+    "keywords": [
+        "jspm",
+        "systemjs",
+        "riotjs",
+        "loader",
+        "plugin"
+    ],
+    "author": "Felipe Figueroa <amenadiel@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/amenadiel/systemjs-riot/issues"
+    },
+    "homepage": "https://github.com/amenadiel/systemjs-riot",
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+        "babel-eslint": "^5.0.0-beta6",
+        "eslint-plugin-riot": "^0.1.4",
+        "jspm": "^0.16.19"
+    },
+    "jspm": {
+        "dependencies": {
+            "riot-compiler": "npm:riot-compiler@^2.3.19"
+        },
+        "devDependencies": {
+            "babel": "npm:babel-core@^5.8.24",
+            "babel-runtime": "npm:babel-runtime@^5.8.24",
+            "riot": "npm:riot@^2.3.12",
+            "core-js": "npm:core-js@^1.1.4"
+        }
     }
-  },
-  "dependencies": {
-    "jspm": "^0.16.19"
-  }
 }

@@ -9,7 +9,7 @@ This plugin will translate [Riot](http://riotjs.com/) tags JS.
 To use it you should install it with jspm:
 
 ```
-jspm install tag=npm:systemjs-riot
+jspm install tag=github:amenadiel/systemjs-riot
 ```
 
 After that you can include Riot tags in your modules:
