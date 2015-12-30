@@ -1,4 +1,4 @@
-# systemjs-riot [![Build Status](https://travis-ci.org/amenadiel/systemjs-riot.svg)](https://travis-ci.org/amenadiel/systemjs-riotsvg)
+# systemjs-riot [![Build Status](https://travis-ci.org/amenadiel/systemjs-riot.svg)](https://travis-ci.org/amenadiel/systemjs-riot)
 
 [Riot](http://riotjs.com/) loader plugin for [jspm](https://jspm.io)/[SystemJS](https://github.com/systemjs/systemjs)
 
