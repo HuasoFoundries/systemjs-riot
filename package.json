@@ -1,6 +1,6 @@
 {
     "name": "systemjs-riot",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "description": "RiotJS loader plugin for jspm/systemjs",
     "main": "tag",
     "files": [
@@ -31,7 +31,10 @@
         "eslint-plugin-riot": "^0.1.4",
         "jspm": "^0.16.19"
     },
+    "registry": "npm",
     "jspm": {
+        "main": "tag",
+        "registry": "npm",
         "dependencies": {
             "riot-compiler": "npm:riot-compiler@^2.3.19"
         },
