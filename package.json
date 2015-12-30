@@ -31,8 +31,6 @@
         "eslint-plugin-riot": "^0.1.4",
         "jspm": "^0.16.19"
     },
-
-
     "jspm": {
         "main": "tag",
         "jspmNodeConversion": false,
