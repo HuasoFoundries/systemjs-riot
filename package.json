@@ -1,36 +1,45 @@
 {
-  "name": "plugin-jsx",
-  "version": "1.1.0",
-  "description": "JSX loader plugin",
-  "main": "jsx",
+  "name": "systemjs-riot",
+  "version": "0.1.0",
+  "description": "RiotJS loader plugin for jspm/systemjs",
+  "main": "tag",
   "files": [
-    "jsx.js"
+    "tag.js"
   ],
   "scripts": {
-    "test": "jspm install && jspm bundle sample.jsx! sample.js && node test.js"
+    "test": "jspm install && jspm bundle-sfx todo.tag! todo.js --format amd && node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/floatdrop/plugin-jsx.git"
+    "url": "https://github.com/amenadiel/systemjs-riot"
   },
   "keywords": [
     "jspm",
-    "jsx",
+    "systemjs",
+    "riotjs",
     "loader",
     "plugin"
   ],
-  "author": "Vsevolod Strukchinsky <floatdrop@gmail.com>",
+  "author": "Felipe Figueroa <amenadiel@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/floatdrop/plugin-jsx/issues"
+    "url": "https://github.com/amenadiel/systemjs-riot/issues"
   },
-  "homepage": "https://github.com/floatdrop/plugin-jsx",
+  "homepage": "https://github.com/amenadiel/systemjs-riot",
   "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint-plugin-riot": "^0.1.4",
     "jspm": "^0.14.0"
   },
   "jspm": {
     "dependencies": {
-      "react-tools": "npm:react-tools@^0.13.0"
+      "riot-compiler": "npm:riot-compiler@^2.3.19"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "riot": "npm:riot@^2.3.12"
     }
   }
 }
