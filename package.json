@@ -1,6 +1,6 @@
 {
     "name": "systemjs-riot",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "description": "RiotJS loader plugin for jspm/systemjs",
     "main": "tag",
     "files": [
