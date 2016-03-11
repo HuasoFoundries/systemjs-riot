@@ -1,6 +1,6 @@
 {
     "name": "systemjs-riot",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "RiotJS loader plugin for jspm/systemjs",
     "main": "tag",
     "files": [
@@ -11,7 +11,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/amenadiel/systemjs-riot"
+        "url": "https://github.com/HuasoFoundries/systemjs-riot"
     },
     "keywords": [
         "jspm",
@@ -23,9 +23,9 @@
     "author": "Felipe Figueroa <amenadiel@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/amenadiel/systemjs-riot/issues"
+        "url": "https://github.com/HuasoFoundries/systemjs-riot/issues"
     },
-    "homepage": "https://github.com/amenadiel/systemjs-riot",
+    "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
     "devDependencies": {
         "babel-eslint": "^5.0.0-beta6",
         "eslint-plugin-riot": "^0.1.4",
