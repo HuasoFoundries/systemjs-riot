@@ -1,6 +1,6 @@
 {
   "name": "systemjs-riot",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "RiotJS loader plugin for jspm/systemjs",
   "main": "tag",
   "files": [
@@ -29,22 +29,21 @@
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
     "eslint-plugin-riot": "^0.1.4",
-    "jspm": "^0.16.27",
-    "riot-compiler": "^2.3.23"
+    "jspm": "^0.16.27"
   },
   "jspm": {
-    "registry": "github",
     "dependencies": {
-      "riot": "riot/riot@^2.3.18"
+      "riot-compiler": "npm:riot-compiler@2.3.23"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+      "core-js": "npm:core-js@^1.1.4",
+      "riot": "github:riot/riot@^2.3.18"
     },
     "overrides": {
       "github:riot/riot@2.3.18": {
-        "main": "riot+compiler.js"
+        "main": "riot.js"
       }
     }
   }
