@@ -3,7 +3,7 @@ function getCompiler(loader) {
 
     if (typeof window !== 'undefined') {
 
-        return loader.import('riot');
+        return loader.import('riot/riot+compiler.js');
 
     } else {
 
