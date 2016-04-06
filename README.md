@@ -11,9 +11,11 @@ This plugin will translate [Riot](http://riotjs.com/) tags JS.
 
 To use it you should install it with jspm:
 
+
 ```
-jspm install tag=npm:systemjs-riot
+jspm install tag
 ```
+
 
 After that you can include Riot tags in your modules:
 
@@ -25,8 +27,19 @@ riot.mount('todo');
 
 ```
 
-If you precompile your tags using the `bundle-sfx` command with the `--format amd` option, 
-the result will also compatible with AMD loaders such as [RequireJS](http://requirejs.org/).
+When you bundle (or bundle-sfx) you project, the tags will be precompiled and inlined as
+part of the process, but **this needs you to install `riot-compiler` in your project**:
+
+```
+npm install riot-compiler --save-dev
+```
+
+Why? Because the other alternative is to install riot-compiler with jspm which in turn will
+install a ton of dependencies, and your config.js file will increase exponentially. Let's keep
+in node what's meant for node. 
+
+That being said, if you precompile your tags using the `bundle-sfx` command with the `--format amd` 
+option, the result should also be compatible with AMD loaders such as [RequireJS](http://requirejs.org/).
 
 ```js
 define(['riot','todo'],function(riot) {
