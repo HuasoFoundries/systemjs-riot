@@ -1,6 +1,6 @@
 # systemjs-riot 
 
-[![Build Status](https://travis-ci.org/amenadiel/systemjs-riot.svg)](https://travis-ci.org/amenadiel/systemjs-riot)
+[![Build Status](https://travis-ci.org/HuasoFoundries/systemjs-riot.svg)](https://travis-ci.org/HuasoFoundries/systemjs-riot)
 [![npm](https://img.shields.io/npm/dm/systemjs-riot.svg)](https://www.npmjs.com/package/systemjs-riot)
 
 *The structure of this project blatantly imitates the layout of [floatDrop/plugin-jsx](https://github.com/floatdrop/plugin-jsx). Kudos to him.*
