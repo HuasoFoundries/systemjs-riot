@@ -1,51 +1,54 @@
 {
-    "name": "systemjs-riot",
-    "version": "1.1.1",
-    "description": "RiotJS loader plugin for jspm/systemjs",
-    "main": "tag",
-    "files": [
-        "tag.js"
-    ],
-    "scripts": {
-        "test": "make test"
+  "name": "systemjs-riot",
+  "version": "1.1.1",
+  "description": "RiotJS loader plugin for jspm/systemjs",
+  "main": "tag",
+  "files": [
+    "tag.js"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HuasoFoundries/systemjs-riot"
+  },
+  "keywords": [
+    "jspm",
+    "systemjs",
+    "riotjs",
+    "loader",
+    "plugin"
+  ],
+  "author": "Felipe Figueroa <amenadiel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HuasoFoundries/systemjs-riot/issues"
+  },
+  "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint-plugin-riot": "^0.1.4",
+    "jspm": "0.16.27"
+  },
+  "jspm": {
+    "registry": "github",
+    "format": "amd",
+    "dependencies": {
+      "fs": "jspm/nodelibs-fs@^0.1.2",
+      "path": "jspm/nodelibs-path@^0.1.0",
+      "riot-compiler": "riot/compiler@~2.3"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/HuasoFoundries/systemjs-riot"
-    },
-    "keywords": [
-        "jspm",
-        "systemjs",
-        "riotjs",
-        "loader",
-        "plugin"
-    ],
-    "author": "Felipe Figueroa <amenadiel@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/HuasoFoundries/systemjs-riot/issues"
-    },
-    "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
     "devDependencies": {
-        "babel-eslint": "^5.0.0-beta6",
-        "eslint-plugin-riot": "^0.1.4",
-        "jspm": "^0.16.27"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4",
+      "riot": "riot/riot@^2.3.18"
     },
-    "jspm": {
-        "jspmNodeConversion": false,
-        "dependencies": {
-            "riot-compiler": "npm:riot-compiler@2.3.23"
-        },
-        "devDependencies": {
-            "babel": "npm:babel-core@^5.8.24",
-            "babel-runtime": "npm:babel-runtime@^5.8.24",
-            "core-js": "npm:core-js@^1.1.4",
-            "riot": "github:riot/riot@^2.3.18"
-        },
-        "overrides": {
-            "github:riot/riot@2.3.18": {
-                "main": "riot.js"
-            }
-        }
+    "overrides": {
+      "github:riot/riot@2.3.18": {
+        "main": "riot.js"
+      }
     }
+  }
 }
