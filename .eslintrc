@@ -8,7 +8,14 @@
         "es6": true,
         "amd":true
     },
-    
+    globals:{
+        "require":false,
+        "requirejs":false,
+        "define":false,
+        "describe":false,
+        "it":false
+
+    },
 
     "ecmaFeatures": {
         "arrowFunctions": true,

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>AMD Riot example</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/example/css/styles.css">
+    <script src="/jspm_packages/system.js"></script>
+    <script src="/example/config.js"></script>
+    <script>
+    System.import('example/js/app');
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="/example/requirejs_example.html">RequireJS Example</a>
+        <a href="/example/requirejs_precompiled.html">RequireJS + precompiled tags</a>
+        <a href="/example/requirejs_bundled.html">RequireJS all-in-one-file</a>
+        <a href="/example/systemjs_example.html">SystemJS Example</a>
+        <a href="/example/systemjs_precompiled.html">SystemJS + precompiled tags</a>
+    </div>
+    <div class="tagcontainer">
+        <div class="timercontainer">
+            <h4>Timer</h4>
+            <timer></timer>
+        </div>
+        <div class="appcontainer">
+            <h4>Panels</h4>
+            <panels></panels>
+        </div>
+        <div class="todocontainer">
+            <h4>Todo</h4>
+            <todo></todo>
+        </div>
+    </div>
+</body>
+
+</html>
