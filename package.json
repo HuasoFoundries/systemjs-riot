@@ -1,13 +1,14 @@
 {
     "name": "systemjs-riot",
-    "version": "1.2.3",
-    "description": "RiotJS loader plugin for jspm/systemjs",
+    "version": "1.2.4",
+    "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
     "main": "systemjs-riot",
     "engines": {
         "node": "4.2.x"
     },
     "files": [
-        "tag.js"
+        "systemjs-riot.js",
+        "requirejs-riot.js"
     ],
     "scripts": {
         "postinstall": "jspm install",
@@ -20,6 +21,7 @@
     "keywords": [
         "jspm",
         "systemjs",
+        "requirejs",
         "riotjs",
         "loader",
         "plugin"
