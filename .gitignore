@@ -1,6 +1,3 @@
 node_modules
 jspm_packages
-config.js
-todo.js
-todo.js.map
 fabfile*
