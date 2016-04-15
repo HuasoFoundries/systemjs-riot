@@ -1,6 +1,6 @@
 {
     "name": "systemjs-riot",
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
     "main": "systemjs-riot",
     "engines": {
@@ -43,7 +43,7 @@
     },
     "jspm": {
         "registry": "github",
-        "format": "amd",
+        "format": "esm",
         "configFile": "example/config.js",
         "dependencies": {
             "fs": "jspm/nodelibs-fs@^0.1.2",
