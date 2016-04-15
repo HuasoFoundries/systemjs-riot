@@ -7,8 +7,8 @@ This is a loader plugin that enables to dinamically compile [Riot](http://riotjs
 from [jspm](https://jspm.io)/[SystemJS](https://github.com/systemjs/systemjs) or [RequireJS](http://requirejs.org/)
 and statically inline them during your build task.
 
-
-[![npm](https://img.shields.io/npm/dm/requirejs-riot.svg)](https://www.npmjs.com/package/requirejs-riot)
+Prior to version 1.2.0 the requirejs part of this loader was a separate project known as [requirejs-riot](https://www.npmjs.com/package/requirejs-riot),
+which is now deprecated in favor of this one.
 
 
 ### Usage with JSPM/SystemJS
