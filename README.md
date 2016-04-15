@@ -54,21 +54,13 @@ Add the proper config to your main requirejs.config. For example:
 
 ```js
 requirejs.config({
-
     paths: {
         "riot": "/node_modules/riot/riot+compiler.min",
-        "requirejs-riot": "/node_modules/systemjs-riot/requirejs-riot",
+        "tag": "../requirejs-riot",
         "tags": "./tags",
         "dist": "./dist"
-
-    },
-    map: {
-        "*": {
-            "tag": "requirejs-riot"
-        }
     }
 });
-
 ```
 
 Then load your tags by prepending `tag!` to their path:
@@ -112,7 +104,7 @@ bundles that you can inspect. The tasks run under the hood are:
 jspm bundle-sfx 'tag!tags/todo.tag + tag!tags/timer.tag + tag!tags/app.tag - riot' example/dist/alltags.js --format umd
 ```
 
-** for the `r.js` optimizer**
+**for the `r.js` optimizer**
 
 ```sh
 ./node_modules/.bin/r.js -o example/requirejs.build.js
