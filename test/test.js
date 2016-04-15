@@ -5,12 +5,12 @@ var assert = require('assert'),
     theoutputs = ['example/dist/todo.js', 'example/dist/timer.js', 'example/dist/panels.js'];
 
 describe('Bundle SFX less file', function() {
+    this.timeout(10000);
     for (var i = 0; i < thetags.length; i++) {
         var infile = thetags[i],
             outfile = theoutputs[i];
         it('Should be able to compile and bundle ' + infile, function(done) {
 
-            console.log('outfile is', outfile);
 
             fs.exists(outfile, function(exists) {
                 if (exists) {
@@ -35,7 +35,7 @@ describe('Bundle SFX less file', function() {
 });
 
 describe('The bundled file containts valid code', function() {
-    this.timeout(1000);
+    this.timeout(2000);
     for (var j = 0; j < thetags.length; j++) {
         var outfile = theoutputs[j];
 
