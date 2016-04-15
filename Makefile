@@ -36,7 +36,7 @@ update_version:
 
 tag_and_push:
 		git add --all
-		git commit -a -m "Tag v $(v) $(m)"
+		git commit -a -m "Tag v$(v) $(m)"
 		git tag v$(v)
 		git push
 		git push --tags
