@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/HuasoFoundries/systemjs-riot.svg)](https://travis-ci.org/HuasoFoundries/systemjs-riot) [![Code Climate](https://codeclimate.com/github/HuasoFoundries/systemjs-riot/badges/gpa.svg)](https://codeclimate.com/github/HuasoFoundries/systemjs-riot)
 [![npm](https://img.shields.io/npm/dm/systemjs-riot.svg)](https://www.npmjs.com/package/systemjs-riot)
 
-This is a loader plugin that enables to dinamically compile [Riot](http://riotjs.com/) tags
+This is a loader plugin that enables to dynamically compile [Riot](http://riotjs.com/) tags
 from [jspm](https://jspm.io)/[SystemJS](https://github.com/systemjs/systemjs) or [RequireJS](http://requirejs.org/)
 and statically inline them during your build task.
 
