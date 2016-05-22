@@ -8,9 +8,9 @@ export function translate(load) {
         //expr: true
         //type: 'babel'
     };
-    load.metadata.format = 'amd';
+    load.metadata.format = 'esm';
     var precompiled = compiler.compile(load.source, options);
-    var output = `define(['riot'], function(riot) { ${precompiled} });`;
+    var output = `import riot from 'riot';\n${precompiled}`;
 
     load.source = output;
     return output;
