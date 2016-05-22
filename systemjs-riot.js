@@ -7,10 +7,11 @@ export function translate(load) {
     let precompiled = compiler.compile(load.source);
     let output;
 
-    if (load.metadata.format === 'esm')
+    if (load.metadata.format === 'esm') {
       output = `import riot from 'riot';\n${precompiled}`;
-    else
+    } else {
       output = `define(['riot'], function(riot) { ${precompiled} });`;
+    }
 
     load.source = output;
     return output;
