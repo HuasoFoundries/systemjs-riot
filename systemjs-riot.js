@@ -4,13 +4,14 @@
 import compiler from 'riot-compiler';
 
 export function translate(load) {
-    var options = {
-        //expr: true
-        //type: 'babel'
-    };
-    load.metadata.format = 'amd';
-    var precompiled = compiler.compile(load.source, options);
-    var output = `define(['riot'], function(riot) { ${precompiled} });`;
+    let precompiled = compiler.compile(load.source);
+    let output;
+
+    if (load.metadata.format === 'esm') {
+      output = `import riot from 'riot';\n${precompiled}`;
+    } else {
+      output = `define(['riot'], function(riot) { ${precompiled} });`;
+    }
 
     load.source = output;
     return output;
