@@ -4,7 +4,7 @@ var assert = require('assert'),
     thetags = ['tags/todo.tag', 'tags/timer.tag', 'tags/panels.tag'],
     theoutputs = ['example/dist/todo.js', 'example/dist/timer.js', 'example/dist/panels.js'];
 
-describe('Bundle SFX less file', function() {
+describe('Bundle precompiled tag file', function() {
     this.timeout(10000);
     for (var i = 0; i < thetags.length; i++) {
         var infile = thetags[i],
