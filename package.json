@@ -1,59 +1,58 @@
 {
-    "name": "systemjs-riot",
-    "version": "1.3.0",
-    "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
-    "main": "systemjs-riot",
-    "engines": {
-        "node": "4.2.x"
+  "name": "systemjs-riot",
+  "version": "1.3.1",
+  "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
+  "main": "systemjs-riot",
+  "engines": {
+    "node": "4.2.x"
+  },
+  "files": [
+    "systemjs-riot.js",
+    "requirejs-riot.js"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HuasoFoundries/systemjs-riot"
+  },
+  "keywords": [
+    "jspm",
+    "systemjs",
+    "requirejs",
+    "riotjs",
+    "loader",
+    "plugin"
+  ],
+  "author": "Felipe Figueroa <amenadiel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HuasoFoundries/systemjs-riot/issues"
+  },
+  "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint-plugin-riot": "^0.1.4",
+    "jspm": "0.16.27",
+    "mocha": "^2.4.5",
+    "requirejs": "^2.2.0",
+    "riot": "^2.3.18",
+    "serve": "^1.4.0"
+  },
+  "jspm": {
+    "registry": "github",
+    "format": "esm",
+    "configFile": "example/config.js",
+    "dependencies": {
+      "fs": "jspm/nodelibs-fs@^0.1.2",
+      "path": "jspm/nodelibs-path@^0.1.0",
+      "riot-compiler": "npm:riot-compiler@^2.3.23"
     },
-    "files": [
-        "systemjs-riot.js",
-        "requirejs-riot.js"
-    ],
-    "scripts": {
-        "postinstall": "jspm install",
-        "test": "make test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/HuasoFoundries/systemjs-riot"
-    },
-    "keywords": [
-        "jspm",
-        "systemjs",
-        "requirejs",
-        "riotjs",
-        "loader",
-        "plugin"
-    ],
-    "author": "Felipe Figueroa <amenadiel@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/HuasoFoundries/systemjs-riot/issues"
-    },
-    "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
     "devDependencies": {
-        "babel-eslint": "^5.0.0-beta6",
-        "eslint-plugin-riot": "^0.1.4",
-        "jspm": "0.16.27",
-        "mocha": "^2.4.5",
-        "requirejs": "^2.2.0",
-        "riot": "^2.3.18",
-        "serve": "^1.4.0"
-    },
-    "jspm": {
-        "registry": "github",
-        "format": "esm",
-        "configFile": "example/config.js",
-        "dependencies": {
-            "fs": "jspm/nodelibs-fs@^0.1.2",
-            "path": "jspm/nodelibs-path@^0.1.0",
-            "riot-compiler": "npm:riot-compiler@^2.3.23"
-        },
-        "devDependencies": {
-            "babel": "npm:babel-core@^5.8.24",
-            "babel-runtime": "npm:babel-runtime@^5.8.24",
-            "core-js": "npm:core-js@^1.1.4"
-        }
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
+  }
 }
