@@ -101,7 +101,7 @@ bundles that you can inspect. The tasks run under the hood are:
 **for jspm**:
 
 ```sh
-jspm bundle-sfx 'tag!tags/todo.tag + tag!tags/timer.tag + tag!tags/app.tag - riot' example/dist/alltags.js --format umd
+jspm build 'tag!tags/todo.tag + tag!tags/timer.tag + tag!tags/app.tag - riot' example/dist/alltags.js --format umd
 ```
 
 **for the `r.js` optimizer**

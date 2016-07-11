@@ -95,7 +95,7 @@
         "no-caller": 2, // disallow use of arguments.caller or arguments.callee
         "no-div-regex": 2, // disallow division operators explicitly at beginning of regular expression (off by default)
         "no-else-return": 2, // disallow else after a return in an if (off by default)
-        "no-empty-label": 2, // disallow use of labels for anything other then loops and switches
+        
         "no-eq-null": 2, // disallow comparisons to null without a type-checking operator (off by default)
         "no-eval": 2, // disallow use of eval()
         "no-extend-native": 2, // disallow adding to native types
@@ -211,7 +211,7 @@
             "after": true
         }], // enforce spacing before and after semicolons
         "sort-vars": 0, // sort variables within the same declaration block (off by default)
-        "space-after-keywords": [1, "always"], // require a space after certain keywords (off by default)
+        "keyword-spacing": [1, "always"], // require a space after certain keywords (off by default)
         "space-before-blocks": [1, "always"], // require or disallow space before blocks (off by default)
         
         
@@ -243,7 +243,7 @@
         "max-params": [1, 5], // limits the number of parameters that can be used in the function declaration. (off by default)
         "max-statements": 0, // specify the maximum number of statement allowed in a function (off by default)
         "no-bitwise": 1, // disallow use of bitwise operators (off by default)
-        "no-plusplus": 1, // disallow use of unary operators, ++ and -- (off by default)
+        "no-plusplus": 0, // disallow use of unary operators, ++ and -- (off by default)
 
        
     }

@@ -1,3 +1,4 @@
+
 VERSION = $(shell cat package.json | sed -n 's/.*"version": "\([^"]*\)",/\1/p')
 
 SHELL = /usr/bin/env bash
@@ -25,7 +26,7 @@ serve:
 
 build:
 	@echo "Generating a single bundle of all tags"
-	jspm bundle-sfx 'tag!tags/todo.tag + tag!tags/timer.tag + tag!tags/panels.tag - riot' example/dist/alltags.js --format umd --skip-source-maps
+	jspm build 'tag!tags/todo.tag + tag!tags/timer.tag + tag!tags/panels.tag - riot' example/dist/alltags.js --format umd --skip-source-maps
 	@echo "Generating a monolihyc build using r.js optimizer"
 	./node_modules/.bin/r.js -o example/requirejs.build.js
 
