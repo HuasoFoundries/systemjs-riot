@@ -1,6 +1,6 @@
 {
     "name": "systemjs-riot",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
     "main": "systemjs-riot.js",
     "engines": {
@@ -39,7 +39,7 @@
         "mocha": "^2.4.5",
         "requirejs": "^2.2.0",
         "riot": "^2.5.0",
-        "serve": "^1.4.0"
+        "serve": "^1.4.1"
     },
     "jspm": {
         "configFiles": {

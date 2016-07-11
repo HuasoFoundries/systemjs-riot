@@ -1,3 +1,4 @@
 node_modules
 jspm_packages
 fabfile*
+example/dist/*.tag.js

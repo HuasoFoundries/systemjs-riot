@@ -4,7 +4,7 @@ var assert = require('assert'),
 
     fs = require('fs'),
     thetags = ['tags/todo.tag', 'tags/timer.tag', 'tags/panels.tag'],
-    theoutputs = ['example/dist/todo.js', 'example/dist/timer.js', 'example/dist/panels.js'];
+    theoutputs = ['example/dist/todo.tag.js', 'example/dist/timer.tag.js', 'example/dist/panels.tag.js'];
 
 describe('Bundle precompiled tag file', function() {
     this.timeout(10000);
