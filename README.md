@@ -83,7 +83,6 @@ define(['riot','tag!timer.tag'], function(riot) {
 Install [serve](https://www.npmjs.com/package/serve) or any other basic webserver
 
 ```sh
-sudo npm install -g serve
 make runexample
 ```
 

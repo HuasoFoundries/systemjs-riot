@@ -34,7 +34,7 @@ build:
 update_version:
 	@echo "Current version is " ${VERSION}
 	@echo "Next version is " $(v)
-	sed -i s/"$(VERSION)"/"$(v)"/g package.json
+	sed -i s/'"$(VERSION)"'/'"$(v)"'/ package.json
 
 tag_and_push:
 		git add --all
