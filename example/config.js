@@ -20,7 +20,7 @@ SystemJS.config({
     },
     devConfig: {
         "map": {
-            "plugin-babel": "npm:systemjs-plugin-babel@0.0.12"
+            "plugin-babel": "npm:systemjs-plugin-babel@0.0.17"
         }
     },
     transpiler: "plugin-babel",
@@ -52,10 +52,10 @@ SystemJS.config({
         "github:*/*.json"
     ],
     map: {
-        "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
-        "path": "github:jspm/nodelibs-path@0.2.0-alpha",
-        "process": "github:jspm/nodelibs-process@0.2.0-alpha",
-        "riot-compiler": "npm:riot-compiler@2.5.2"
+        "fs": "npm:jspm-nodelibs-fs@0.2.0",
+        "path": "npm:jspm-nodelibs-path@0.2.1",
+        "process": "npm:jspm-nodelibs-process@0.2.0",
+        "riot-compiler": "npm:riot-compiler@2.5.7"
     },
     packages: {}
 });
