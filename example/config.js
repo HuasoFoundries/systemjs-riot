@@ -1,8 +1,7 @@
 SystemJS.config({
     paths: {
         "github:": "jspm_packages/github/",
-        "npm:": "jspm_packages/npm/",
-        "systemjs-riot/": "src/"
+        "npm:": "jspm_packages/npm/"
     },
     browserConfig: {
         "baseURL": "/",
@@ -35,11 +34,7 @@ SystemJS.config({
             "build": false
         }
     },
-    packages: {
-        "systemjs-riot": {
-            "main": "systemjs-riot.js"
-        }
-    },
+
     map: {
         "tag": "systemjs-riot.js"
     }

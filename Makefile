@@ -16,7 +16,7 @@ install:
 
 test:
 	jspm install --quick
-	./node_modules/.bin/mocha 
+	$$(npm bin)/mocha 
 
 runexample: build serve
 
