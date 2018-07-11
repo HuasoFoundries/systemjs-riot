@@ -15,7 +15,7 @@ install:
 
 
 test:
-	$$(npm bin)jspm install --quick
+	$$(npm bin)/jspm install --quick
 	$$(npm bin)/mocha 
 
 runexample: build serve
