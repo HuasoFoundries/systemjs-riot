@@ -12,7 +12,8 @@ version:
 
 install:
 	npm install
-	jspm install
+	npm i -D jspm@beta
+	$$(npm bin)jspm install
 
 test:
 	jspm install --quick
