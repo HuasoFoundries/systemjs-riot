@@ -1,109 +1,110 @@
 body {
-    font-family: 'myriad pro', sans-serif;
-    font-size: 20px;
-    border: 0;
+  font-family: 'myriad pro', sans-serif;
+  font-size: 20px;
+  border: 0;
 }
 
 form input {
-    font-size: 85%;
-    padding: .4em;
-    border: 1px solid #ccc;
-    border-radius: 2px;
+  font-size: 85%;
+  padding: .4em;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 button {
-    background-color: #1FADC5;
-    border: 1px solid rgba(0, 0, 0, .2);
-    font-size: 75%;
-    color: #fff;
-    padding: .4em 1.2em;
-    border-radius: 2em;
-    cursor: pointer;
-    margin: 0 .23em;
-    outline: none;
+  background-color: #1FADC5;
+  border: 1px solid rgba(0, 0, 0, .2);
+  font-size: 75%;
+  color: #fff;
+  padding: .4em 1.2em;
+  border-radius: 2em;
+  cursor: pointer;
+  margin: 0 .23em;
+  outline: none;
 }
 
 button[disabled] {
-    background-color: #ddd;
-    color: #aaa;
+  background-color: #ddd;
+  color: #aaa;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 li {
-    list-style-type: none;
-    padding: .2em 0;
+  list-style-type: none;
+  padding: .2em 0;
 }
 
 .completed {
-    text-decoration: line-through;
-    color: #ccc;
+  text-decoration: line-through;
+  color: #ccc;
 }
 
 label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 timer {
-    display: block;
-    max-width: 300px;
-    margin: 0 auto;
-    border: 1px solid rgba(64, 139, 194, .5);
-    border-radius: 6px;
-    color: rgba(64, 139, 194, 1);
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    background: white;
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid rgba(64, 139, 194, .5);
+  border-radius: 6px;
+  color: rgba(64, 139, 194, 1);
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: white;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .menu {
-    width: 100%;
-    text-align: center;
-    float: left;
+  width: 100%;
+  text-align: center;
+
+  margin: 0 auto;
 }
 
 .menu a {
-    float: left;
-    display: inline-block;
-    width: 15%;
-    border: 1px solid #CCC;
-    padding: 5px 2px;
-    text-decoration: none;
-    font-size: 14px;
+  float: left;
+  display: inline-block;
+  width: 23%;
+  border: 1px solid #CCC;
+  padding: 5px 2px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .menu a:hover {
-    background-color: #EEE;
+  background-color: #EEE;
 }
 
 .tagcontainer {
-    width: 100%;
-    height: 100%;
-    float: left;
+  width: 100%;
+  height: 100%;
+  float: left;
 }
 
-.tagcontainer > div {
-    float: left;
+.tagcontainer>div {
+  float: left;
 }
 
 .tagcontainer .timercontainer {
-    width: 20%;
-    text-align: center;
+  width: 20%;
+  text-align: center;
 }
 
 .tagcontainer .appcontainer {
-    width: 40%;
-    margin: 0 5%;
-    text-align: center;
+  width: 40%;
+  margin: 0 5%;
+  text-align: center;
 }
 
 .tagcontainer .todocontainer {
-    width: 25%;
+  width: 25%;
 }

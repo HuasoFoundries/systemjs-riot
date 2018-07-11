@@ -1,6 +1,6 @@
 {
   "name": "systemjs-riot",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
   "main": "systemjs-riot.js",
   "engines": {
@@ -34,24 +34,21 @@
   },
   "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint": "^4.8.0",
-    "jspm": "^0.17.0-beta.45",
-    "mocha": "^2.4.5",
-    "requirejs": "^2.2.0",
-    "riot": "^2.5.0",
-    "serve": "^1.4.0"
+    "babel-eslint": "^8.2.5",
+    "eslint": "^4.19.1",
+    "jspm": "^0.17.0-beta.47",
+    "mocha": "^5.2.0",
+    "requirejs": "^2.3.5",
+    "riot": "^2.6.8",
+    "serve": "^9.2.0"
   },
   "jspm": {
-    "configFiles": {
-      "jspm": "example/config.js"
-    },
     "format": "esm",
     "dependencies": {
       "riot-compiler": "npm:riot-compiler@^2.5.7"
     },
     "devDependencies": {
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17"
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
     },
     "peerDependencies": {
       "fs": "npm:jspm-nodelibs-fs@^0.2.0",

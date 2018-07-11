@@ -14,7 +14,9 @@
         "requirejs": false,
         "define": false,
         "describe": false,
-        "it": false
+        "it": false,
+        "System":false,
+        "SystemJS":false
 
     },
 

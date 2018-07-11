@@ -22,13 +22,13 @@ runexample: build serve
 
 serve:
 	@echo "Point your browser to http://localhost:3000/example/ to check the examples"
-	./node_modules/.bin/serve .
+	$$(npm bin)/serve .
 
 build:
 	@echo "Generating a single bundle of all tags"
-	jspm build 'tag!tags/todo.tag + tag!tags/timer.tag + tag!tags/panels.tag - riot' example/dist/alltags.js --format umd --skip-source-maps
+	$$(npm bin)/jspm build 'tags/todo.tag + tags/timer.tag + tags/panels.tag - riot' example/dist/alltags.js --format umd --skip-source-maps
 	@echo "Generating a monolihyc build using r.js optimizer"
-	./node_modules/.bin/r.js -o example/requirejs.build.js
+	$$(npm bin)/r.js -o example/requirejs.build.js
 
 
 update_version:

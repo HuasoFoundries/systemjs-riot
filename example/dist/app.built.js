@@ -73,23 +73,23 @@ define('tag!tags/todo.tag',['riot'], function(riot){ return riot.tag2('todo', '<
 });
 
 define('js/app',[
-    "riot",
-    "tag!tags/timer.tag",
-    "tag!tags/panels.tag",
-    "tag!tags/todo.tag"
+  "riot",
+  "tag!tags/timer.tag",
+  "tag!tags/panels.tag",
+  "tag!tags/todo.tag"
 
 ], function(riot) {
 
-    riot.mount('timer', {
-        start: 0
-    });
+  riot.mount('timer', {
+    start: 0
+  });
 
-    riot.mount('panels');
+  riot.mount('panels');
 
-    riot.mount('todo', {
-        items: [{ title: 'wash my teeth' }, { title: 'wipe my hands' }]
-    });
+  riot.mount('todo', {
+    items: [{ title: 'wash my teeth' }, { title: 'wipe my hands' }]
+  });
 
-    riot.route.start(true);
+  riot.route.start(true);
 });
 
