@@ -1,6 +1,6 @@
 {
   "name": "systemjs-riot",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
   "main": "systemjs-riot.js",
   "engines": {
@@ -44,16 +44,17 @@
   },
   "jspm": {
     "format": "esm",
+    "registry": "npm",
     "dependencies": {
-      "riot-compiler": "npm:riot-compiler@^2.5.7"
+      "riot-compiler": "^2.5.7"
     },
     "devDependencies": {
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
+      "plugin-babel": "systemjs-plugin-babel@^0.0.25"
     },
     "peerDependencies": {
-      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
-      "path": "npm:jspm-nodelibs-path@^0.2.0",
-      "process": "npm:jspm-nodelibs-process@^0.2.0"
+      "fs": "jspm-nodelibs-fs@^0.2.0",
+      "path": "jspm-nodelibs-path@^0.2.0",
+      "process": "jspm-nodelibs-process@^0.2.0"
     }
   }
 }
