@@ -4,7 +4,7 @@
   "description": "RiotJS loader plugin for jspm/systemjs and requirejs",
   "main": "systemjs-riot.js",
   "engines": {
-    "node": "4.2.x"
+    "node": "8.11.x || 4.2.x"
   },
   "readmeFilename": "README.md",
   "files": [
@@ -13,7 +13,8 @@
     "README.md"
   ],
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "postinstall": "npm i -D jspm@beta"
   },
   "repository": {
     "type": "git",

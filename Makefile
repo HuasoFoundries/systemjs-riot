@@ -12,11 +12,10 @@ version:
 
 install:
 	npm install
-	npm i -D jspm@beta
-	$$(npm bin)jspm install
+
 
 test:
-	jspm install --quick
+	$$(npm bin)jspm install --quick
 	$$(npm bin)/mocha 
 
 runexample: build serve
