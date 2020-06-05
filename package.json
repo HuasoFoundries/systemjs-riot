@@ -40,7 +40,7 @@
     "mocha": "^5.2.0",
     "requirejs": "^2.3.5",
     "riot": "^2.6.8",
-    "serve": "^9.6.0"
+    "serve": "^11.3.2"
   },
   "jspm": {
     "format": "esm",
