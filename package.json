@@ -35,7 +35,7 @@
   "homepage": "https://github.com/HuasoFoundries/systemjs-riot",
   "devDependencies": {
     "babel-eslint": "^8.2.5",
-    "eslint": "^4.19.1",
+    "eslint": "^7.31.0",
     "jspm": "^0.17.0-beta.48",
     "mocha": "^5.2.0",
     "requirejs": "^2.3.5",
